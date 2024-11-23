@@ -1,0 +1,28 @@
+{
+  "canisters": {
+    "dating_app_backend": {
+      "main": "src/dating_app_backend/main.mo",
+      "type": "motoko"
+    },
+    "dating_app_frontend": {
+      "dependencies": [
+        "dating_app_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/dating_app_frontend/src/index.html"
+      },
+      "source": [
+        "src/dating_app_frontend/assets",
+        "dist/dating_app_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "version": 1
+}
